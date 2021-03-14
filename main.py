@@ -60,12 +60,23 @@ import random
 # Zad4
 # Zdefiniuj funkcje, która sprawdzi czy trójkąt jest prostokątny.
 
-def trojkat_prostokatny(a, b, c):
-    if a ** 2 + b ** 2 == c ** 2:
-        print("Trojkat jest prostokatny")
-    else:
-        print("Trojkat nie jest prostokatny")
+# def trojkat_prostokatny(a, b, c):
+#     if a ** 2 + b ** 2 == c ** 2:
+#         print("Trojkat jest prostokatny")
+#     else:
+#         print("Trojkat nie jest prostokatny")
+#
+#
+# trojkat_prostokatny(3, 4, 5)
+# trojkat_prostokatny(1, 2, 3)
 
 
-trojkat_prostokatny(3, 4, 5)
-trojkat_prostokatny(1, 2, 3)
+# Zad5
+# Zdefiniuj funkcje która policzy pole trapezu. Funkcja ma przyjmować wartości domyślne.
+
+def pole_trapez(a=1, b=2, h=3):
+    return((a + b) * h) / 2
+
+
+print(pole_trapez())
+print(pole_trapez(4, 5, 6))
