@@ -23,7 +23,7 @@ import random
 
 lista1 = []
 for i in range(10):
-    lista1.append(random.randrange(1, 100))
+    lista1.append(random.randrange(100))
 print(lista1)
 
 parzyste = [i for i in lista1 if i % 2 == 0]
