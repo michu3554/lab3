@@ -74,9 +74,33 @@ import random
 # Zad5
 # Zdefiniuj funkcje która policzy pole trapezu. Funkcja ma przyjmować wartości domyślne.
 
-def pole_trapez(a=1, b=2, h=3):
-    return((a + b) * h) / 2
+# def pole_trapez(a=1, b=2, h=3):
+#     return((a + b) * h) / 2
+#
+#
+# print(pole_trapez())
+# print(pole_trapez(4, 5, 6))
 
 
-print(pole_trapez())
-print(pole_trapez(4, 5, 6))
+# Zad6.
+# Zdefiniuj funkcję która będzie liczyć iloczyn elementów ciągu.
+# Parametry funkcji a1 (wartość początkowa), b (wielkość o ile mnożone są kolejne elementy),
+# ile (ile elementów ma mnożyć)
+# Ponadto funkcja niech przyjmuje wartości domyślne: a = 1, b = 4, ile = 10
+
+
+# Zad7
+# Napisz funkcje za pomocą operatora *, która wykona te same działanie co w zadaniu 6.
+
+
+# Zad8
+# Napisz funkcję, która wykorzystuje symbol **. Funkcja ma przyjmować listę zakupów w postaci: klucz to nazwa produktu
+# a wartość to jego koszt. Funkcja ma zliczyć ile jest wszystkich produktów w ogóle i zwracać całościową wartość
+# tych produktów.
+
+def zakupy(**produkty):
+    wartosc = sum(produkty.values())
+    print("Wartosc zakupow wyniosla", wartosc, "zl")
+
+
+zakupy(chleb=3, mleko=2.5, jajka=10)
