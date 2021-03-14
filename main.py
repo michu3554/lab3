@@ -21,10 +21,36 @@ import random
 # Wygeneruj losowo 10 elementów, zapisz je do listy1, następnie wykorzystując Python Comprehension zdefiniuj nową listę,
 # która będzie zawierała tylko parzyste elementy
 
-lista1 = []
-for i in range(10):
-    lista1.append(random.randrange(100))
-print(lista1)
+# lista1 = []
+# for i in range(10):
+#     lista1.append(random.randrange(100))
+# print(lista1)
+#
+# parzyste = [i for i in lista1 if i % 2 == 0]
+# print(parzyste)
 
-parzyste = [i for i in lista1 if i % 2 == 0]
-print(parzyste)
+
+# Zad3
+# Utwórz słownik z produktami spożywczymi do kupienia. Klucz to niech będzie nazwa produktu a wartość - jednostka
+# w jakiej się je kupuje (np. sztuki, kg itd.). Wykorzystaj Python Comprehension do zdefiniowania nowej listy, gdzie
+# będą produkty, których wartość to sztuki.
+
+produkty = {"jajka": "sztuki",
+            "chleb": "sztuki",
+            "bulki": "sztuki",
+            "batonik": "sztuki",
+            "pizza": "sztuki",
+            "twarog": "kg",
+            "maka": "kg",
+            "cukier": "kg",
+            "pomidory": "kg",
+            "ziemniaki": "kg",
+            "woda": "litry",
+            "mleko": "litry",
+            "oranzada": "litry",
+            "cola": "litry",
+            "kefir": "litry",}
+print(produkty)
+
+produkty_sztuki = {key for key, value in produkty.items() if value == "sztuki"}
+print(produkty_sztuki)
