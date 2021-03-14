@@ -1,6 +1,7 @@
 import math
 import random
 
+
 # Zad1
 # Zdefiniuj następujące zbiory, wykorzystując Python comprehension:
 # A = {1-x: x∈<1,10>}
@@ -35,22 +36,36 @@ import random
 # w jakiej się je kupuje (np. sztuki, kg itd.). Wykorzystaj Python Comprehension do zdefiniowania nowej listy, gdzie
 # będą produkty, których wartość to sztuki.
 
-produkty = {"jajka": "sztuki",
-            "chleb": "sztuki",
-            "bulki": "sztuki",
-            "batonik": "sztuki",
-            "pizza": "sztuki",
-            "twarog": "kg",
-            "maka": "kg",
-            "cukier": "kg",
-            "pomidory": "kg",
-            "ziemniaki": "kg",
-            "woda": "litry",
-            "mleko": "litry",
-            "oranzada": "litry",
-            "cola": "litry",
-            "kefir": "litry",}
-print(produkty)
+# produkty = {"jajka": "sztuki",
+#             "chleb": "sztuki",
+#             "bulki": "sztuki",
+#             "batonik": "sztuki",
+#             "pizza": "sztuki",
+#             "twarog": "kg",
+#             "maka": "kg",
+#             "cukier": "kg",
+#             "pomidory": "kg",
+#             "ziemniaki": "kg",
+#             "woda": "litry",
+#             "mleko": "litry",
+#             "oranzada": "litry",
+#             "cola": "litry",
+#             "kefir": "litry",}
+# print(produkty)
+#
+# produkty_sztuki = {key for key, value in produkty.items() if value == "sztuki"}
+# print(produkty_sztuki)
 
-produkty_sztuki = {key for key, value in produkty.items() if value == "sztuki"}
-print(produkty_sztuki)
+
+# Zad4
+# Zdefiniuj funkcje, która sprawdzi czy trójkąt jest prostokątny.
+
+def trojkat_prostokatny(a, b, c):
+    if a ** 2 + b ** 2 == c ** 2:
+        print("Trojkat jest prostokatny")
+    else:
+        print("Trojkat nie jest prostokatny")
+
+
+trojkat_prostokatny(3, 4, 5)
+trojkat_prostokatny(1, 2, 3)
