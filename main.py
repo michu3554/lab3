@@ -1,7 +1,6 @@
 import math
 import random
 
-
 # Zad1
 # Zdefiniuj następujące zbiory, wykorzystując Python comprehension:
 # A = {1-x: x∈<1,10>}
@@ -98,9 +97,25 @@ import random
 # a wartość to jego koszt. Funkcja ma zliczyć ile jest wszystkich produktów w ogóle i zwracać całościową wartość
 # tych produktów.
 
-def zakupy(**produkty):
-    wartosc = sum(produkty.values())
-    print("Wartosc zakupow wyniosla", wartosc, "zl")
+# def zakupy(**produkty):
+#     wartosc = sum(produkty.values())
+#     print("Wartosc zakupow wyniosla", wartosc, "zl")
+#
+#
+# zakupy(chleb=3, mleko=2.5, jajka=10)
 
 
-zakupy(chleb=3, mleko=2.5, jajka=10)
+# Zad9
+# Stwórz pakiet ciągi. Jeden moduł niech dotyczy działań i wzorów związanych z ciągami arytmetycznymi
+# a drugi niech dotyczy działań i wzorów związanych z ciągami geometrycznymi
+
+from ciagi import *
+
+print(arytmetyczny.nty_wyraz(1, 16, 10))
+print(arytmetyczny.suma(1, 10, 4))
+print(arytmetyczny.roznica(2, 5))
+
+print(geometryczny.nty_wyraz(1, 10, 2))
+print(geometryczny.suma(1, 10, 1))
+print(geometryczny.suma(3, 15, 3))
+print(geometryczny.iloraz(3, 9))
